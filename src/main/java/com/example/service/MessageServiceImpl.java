@@ -54,7 +54,7 @@ public class MessageServiceImpl implements MessageService {
 
             
             if (message.getMessageText().length() > 255) {
-                throw new IllegalArgumentException("Message text exceeds the allowable limit.");
+                throw new IllegalArgumentException("Message text is too long");
             }
 
             
